@@ -14,7 +14,7 @@ ifeq ($(TAG_NAME),)
   TAG_NAME := $(shell git describe --always --dirty --abbrev=10 2> $(NULL))
 endif
 
-PKG_NAME=github.com/iamstoxe/urlgrab
+PKG_NAME=github.com/samirettali/urlgrab
 BINARY:=urlgrab
 ifeq ($(GOOS),windows)
 	BINARY=urlgrab.exe
