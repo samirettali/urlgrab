@@ -4,11 +4,6 @@ import (
 	"crypto/tls"
 	"flag"
 	"fmt"
-	"github.com/gocolly/colly/v2"
-	"github.com/gocolly/colly/v2/debug"
-	"github.com/gocolly/colly/v2/extensions"
-	"github.com/gocolly/colly/v2/proxy"
-	"github.com/mpvl/unique"
 	"net"
 	"net/http"
 	"net/url"
@@ -17,8 +12,14 @@ import (
 	"sort"
 	"strings"
 	"time"
-	"urlgrab/browser"
-	. "urlgrab/utilities"
+
+	"github.com/gocolly/colly/v2"
+	"github.com/gocolly/colly/v2/debug"
+	"github.com/gocolly/colly/v2/extensions"
+	"github.com/gocolly/colly/v2/proxy"
+	"github.com/mpvl/unique"
+	"github.com/samirettali/urlgrab/browser"
+	. "github.com/samirettali/urlgrab/utilities"
 )
 
 type DomainInfo struct {
