@@ -2,8 +2,9 @@ package browser
 
 import (
 	"context"
+
 	"github.com/chromedp/chromedp"
-	"urlgrab/utilities"
+	"github.com/samirettali/urlgrab/utilities"
 )
 
 var GlobalContext context.Context
